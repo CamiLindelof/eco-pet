@@ -116,7 +116,7 @@ header{
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
-} */
+} 
 
 
 
@@ -145,6 +145,54 @@ footer a {
     justify-content: end;
     gap: 5%;
   }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; /* This sets the gap between the two main columns */
+}
+
+.cart-details,
+.summary-login {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.summary,
+.summary-total {
+    margin-bottom: 20px;
+}
+
+.login-button,
+.checkout-button {
+    display: block; /* Makes the link fill the container width */
+    background-color: #426269;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* You might want to adjust the layout on smaller screens using a media query */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .cart-details,
+    .summary-login {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
   .footnavcontainer{
     display: flex;
     flex-direction: column;
@@ -193,4 +241,7 @@ footer a {
     color: #f3efed;
     transform: translateY(-4px);
   }
+
+
+  
   /*=========================*/  
