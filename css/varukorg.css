@@ -83,6 +83,17 @@ header{
     transition: 0.3s;
   }
 /* Design för varukorgsknappen*/
+#varukorg{
+  background-color: #a1c7b1;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #F3EFED;
+}
+#varukorg:hover{
+  scale: 1.1;
+  transition: 0.3s;
+}
 
 .korg{
     max-width: 800px;
