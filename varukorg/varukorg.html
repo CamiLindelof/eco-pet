@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+    
 <head id="kassa">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,9 @@
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
         <title>varukorg</title> 
 </head>
+
 <body>
+
     <header>
         <!-- Navigation Bar -->
         <nav class="navbar">
@@ -30,22 +33,53 @@
                 <img src="../varukorg/img/Logo.png" alt="Eco-Pet Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="produkter/produkter.html">Produkter</a></li>
-                <li><a href="varfor-eco/varfor-eco.html">Varför Eko</a></li>
-                <li><a href="faq/faq.html">Vanliga frågor</a></li>
-                <li><a href="om-oss/om-oss.html">Om Oss</a></li>
+                <li><a href="..index.html">Hem</a></li>
+                <li><a href="..produkter/produkter.html">Produkter</a></li>
+                <li><a href="..varfor-eco/varfor-eco.html">Varför Eko</a></li>
+                <li><a href="..faq/faq.html">Vanliga frågor</a></li>
+                <li><a href="..om-oss/om-oss.html">Om Oss</a></li>
             </ul>
             <a id="loginbtn" href="../kop/kop.html">Logga in</a>
-            <a id="varukorg" href="varukorg/varukorg.html">Varukorg(1)</a>
+            <a id="varukorg" href="..varukorg/varukorg.html">Varukorg(1)</a>
         </nav>
     </header>
 
 
     <main> 
-        <h2 class="titel">Varukorg</h2>
+   
         <div class="korg">
-            <h4>Hästmat Hallyage 199:-/kg</h4>
+            <div class="produkt">
+                <img src="../varukorg/img/hastmat.jpg" alt="mat" class="produktbild">
+            </div>
+            <div class="produktdetalj">
+                <p class="produkttitel">Hästmat Hallyage</p>
+                <p class="product-price">199,00 :-/kg.</p>
+                <div class="produktkvantitet">
+                    <p class="antal">Antal kg: 3</p>
+                    <button class="kvantitet-mindre">-</button>
+                    <input type="number" value="3" class="kvantitet-input">
+                    <button class="kvantitet-mer">+</button>
+                </div>
+            </div>
+            
+            <div class="payment">
+            <div class="korgsumma">
+                <p class="subtotal">Beställningsvärde <span>597,00 kr.</span></p>
+                <p class="leverans">Leverans <span>29,00 kr.</span></p>
+                <p class="totalsumma">Summa <span>626,00 kr.</span></p>
+            </div>
+                <button class="checkout-btn">Betala</button>
+            </div>
+        </div>
+        
+         <!-- pausa första flex! 
+        <div class="titel">
+        <h2 >Varukorg</h2>
+        </div>
+
+        <div class="korg">
+            <div class="proddukt">
+            </div><h4>Hästmat Hallyage 199:-/kg</h4>
             <p>Antal kg: 3</p>
             <button onclick="addToCart('Hastmat','-199')">-</button>
             1kg
@@ -69,10 +103,8 @@
                 Mastercard<br>
                 Swish<br>
 
-                <button>Fortsätt till kassan </button>
-
-                <p>(Länk) Läs om returer och återbetalning. </p> </div>
-        </div>
+                <button>Betala</button>
+            </div> -->
     </main>
 
 
