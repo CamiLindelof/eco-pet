@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3efed;
+    color: #333;
+}
+
+h1{
+    font-family:  'Permanent Marker', sans-serif
+}
+h2,h3 {
+    font-family: 'Cabin Sketch', sans-serif;
+}
+p{
+    font-family:  'Prompt', sans-serif
+}
+
+/* Navigation Bar */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    
+    top: 0;
+    background-color: #362f2f;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    z-index: 1000;
+
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-links {
+    font-family: 'Prompt', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a1c7b1;
+}
+
+#loginbtn{
+    background-color: #a1c7b1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #F3EFED;
+    font-family: 'prompt';
+    font-size: 1.2em;
+  }
+  
+  #loginbtn:hover{
+    scale: 1.1;
+    transition: 0.3s;
+  }
+/* Design för varukorgsknappen*/
+  #varukorg{
+    background-color: #a1c7b1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #F3EFED;
+  }
+  #varukorg:hover{
+    scale: 1.1;
+    transition: 0.3s;
+  }
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('../Images/Butiken/3.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: #fff;
+    text-align: center;
+    background-color: #767b7b;
+    background-blend-mode: multiply;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding-top: 6rem; 
+}
+.hero-content h1{
+    font-size: 3rem;
+}
+.hero-content p{
+    font-size: 1.5rem;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start; /* Align the container at the start of the flex container */
+    padding-top: 12vh;
+}
+
+.content-container h1 {
+    font-size: 2.5em;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: 'Prompt', cursive;
+}
+
+
+
+/* why Eco-Pet Section */
+.reasons-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #ffddd2;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reasons-section h3 {
+    font-family: 'Cabin Sketch', sans-serif;
+}
+.reasons-section h2 {
+    font-family: 'Cabin Sketch', cursive;
+}
+.reasons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.reason {
+    width: 100%;
+    max-width: 300px;
+    text-align: center; 
+    border-radius: 8px;
+    overflow: hidden; /* Ensure border radius is applied to images */
+}
+
+.reason img {
+    padding-top: 2rem;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.reason h3 {
+    margin-bottom: 10px;
+    font-family:'Cabin Sketch', sans-serif;
+}
+
+/* Add space between subheader and text */
+.reason p {
+    margin-bottom: 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Expertise och Care Section */
+.about-us-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #519a71;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-us-section p{
+    line-height: 1.6;
+    padding: 1rem 20rem 2rem;
+}
+
+/*footer*/
+
+h4{
+    font-family: 'prompt', sans-serif;
+    font-size: 2.1rem;
+    color: white;
+}
+
+h5{
+    font-family: 'prompt', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer{
+    background-image: url(../footerImages/bg_pfooter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4%;
+    
+    height: auto;
+    color: white;
+  }
+
+  .footcontain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+  }
+
+  .footnavcontainer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .footnavcontainer a{
+    color:#dbcdcd ;
+    text-decoration: none;
+  }
+
+  .footnavcontainer a:hover{
+    color: white;
+  }
+
+  .socialpic {
+    width: 20%;
+    height: 20%;
+    transition: 0.2s;
+    margin-top: 2%;
+  }
+
+  .socialpic:hover{
+    transform: scale(1.2);
+  }
+
+  #iconref{
+    color:white;
+    margin-top: 10%;
+    font-size: 1rem;
+  }
+
+  #iconref a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .copyrightinfo{
+    color: rgb(141, 141, 141);
+    padding-left: 120px;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+  }
+  .back-to-top span {
+    color: #c2e2cf;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+  }
+  .back-to-top:hover span {
+    color: #F3EFED;
+    transform: translateY(-4px);
+  }

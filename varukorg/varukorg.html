@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head id="kassa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link for the stylesheet-->
+        <link rel="stylesheet" href="../css/varukorg.css">
+        <!--Link for the Google Fonts etc.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Permanent+Marker&family=Prompt:wght@100;500&display=swap" rel="stylesheet">
+        <!--Link for the icons-->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <title>varukorg</title> 
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../varukorg/img/Logo.png" alt="Eco-Pet Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter/produkter.html">Produkter</a></li>
+                <li><a href="varfor-eco/varfor-eco.html">Varför Eko</a></li>
+                <li><a href="faq/faq.html">Vanliga frågor</a></li>
+                <li><a href="om-oss/om-oss.html">Om Oss</a></li>
+            </ul>
+            <a id="loginbtn" href="../kop/kop.html">Logga in</a>
+            <a id="varukorg" href="varukorg/varukorg.html">Varukorg(1)</a>
+        </nav>
+    </header>
+
+
+    <main> 
+        <h2 class="titel">Varukorg</h2>
+        <div class="korg">
+            <h4>Hästmat Hallyage 199:-/kg</h4>
+            <p>Antal kg: 3</p>
+            <button onclick="addToCart('Hastmat','-199')">-</button>
+            1kg
+            <button onclick="addToCart('Hastmat','199')">+</button>
+            <p>Totala summan: 597,00kr</p>
+        </div>
+
+        <div class="pay">
+            <h3>Kassa</h3>
+            <p>Logga in för att ta del av dina personliga erbjudanden</p>
+            <a id="loginbtn" href="../kop/kop.html">Logga in</a>
+       
+            <br>------<br>
+       
+            <p>Beställningsvärde 549,00 kr.</p>
+            <p>Leverans	29,00 kr.</p>
+            <p>Summa 578,00 kr.</p>
+               ------<br>
+
+                Visa<br> 
+                Mastercard<br>
+                Swish<br>
+
+                <button>Fortsätt till kassan </button>
+
+                <p>(Länk) Läs om returer och återbetalning. </p> </div>
+        </div>
+    </main>
+
+
+        <footer>
+            <div class="footcontain">
+                <div class="footinfo">
+                    <h4>Kontaktinfo</h4>
+                    <h5>Eco-Pet AB</h5>
+                    <p>Adress: Grönvägen 123, 12345 Ekostaden</p>
+                    <p>Telefon: +46 123 456 789</p>
+                    <p>E-post: info@eco-pet.se</p>
+                </div>
+                
+                <ul class="footnavcontainer">
+                    <li><h2>ECO-PET AB</h2></li>
+                    <li><a href="#">Hem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Eco Info</a></li>
+                    <li><a href="#">Vår Resa</a></li>
+                    <li><a href="../kop/kop.html">Login</a></li>
+                </ul>
+  
+                <div class="social">
+                    <h4>Social</h4>
+                    <div class="socialicons">
+                        <a href="#"><img class="socialpic" src="../footerImages/instagram.png" alt="Insta" width="200" height="200"></a>
+                    </div>
+                    <div class="socialicons">
+                        <a href="#"><img class="socialpic" src="../footerImages/facebook.png" alt="Facebook" width="200" height="200"></a>
+                    </div>
+                    <div class="socialicons">
+                        <a href="#"><img class="socialpic" src="../footerImages/twitter-sign.png" alt="Twitter" width="200" height="200"></a>
+                    </div>
+                    <div id="iconref"> Icons made by 
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyrightinfo">
+                <p>Eco-Pet AB ©2023</p>
+            </div>
+        </footer>
+            <!--======Sticky To Top BTN=========-->
+            <a href="#" class="back-to-top">
+                <span><i id="to-top" class="fi fi-ss-angle-square-up"></i></span>
+            </a>
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+</body>
+</html>

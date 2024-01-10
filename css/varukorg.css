@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #426269;
+    font-family: 'Prompt', sans-serif;
+    max-width: 150. 5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    }
+
+    
+h1{
+    font-family:  'Permanent Marker', sans-serif
+}
+h2,h3,h4{
+    font-family: 'Cabin Sketch', sans-serif;
+}
+p{
+    font-family:  'Prompt', sans-serif
+}
+
+/* Navigation Bar */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    
+    top: 0;
+    background-color: #362f2f;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    z-index: 1000;
+
+}
+.logo img {
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-links {
+    font-family: 'Prompt', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a1c7b1;
+}
+/* Loggin-knappen*/
+#loginbtn{
+    background-color: #a1c7b1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #F3EFED;
+    font-family: 'prompt';
+    font-size: 1.2em;
+  }
+  
+  #loginbtn:hover{
+    scale: 1.1;
+    transition: 0.3s;
+  }
+/* Design för varukorgsknappen*/
+#varukorg{
+    background-color: #a1c7b1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #F3EFED;
+  }
+  #varukorg:hover{
+    scale: 1.1;
+    transition: 0.3s;
+  }
+
+.korg{
+    display:flex;
+
+}
+
+.pay{
+    display: flex;
+    flex-direction: column;
+
+}
+
+  /*Foter med kontaktinformation och upphovsrätt*/
+footer a {
+    color: #f3e8e8;
+    text-decoration: none;
+  }
+  footer{
+    background-image: url(../footerImages/bg_pfooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0%;
+    padding: 4%;
+    margin-top: 4%;
+    height: auto;
+    color: #f3e8e8;
+  }
+  .footcontain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+  }
+  .footnavcontainer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footnavcontainer a{
+    color: #dbcdcd;
+  }
+  .socialpic{
+    width: 20%;
+    height: 20%;
+    transition: 0.2s;
+    margin-top: 2%;
+  }
+  .socialpic:hover{
+    transform: scale(1.2);
+  }
+  #iconref{
+    color:#666666;
+    margin-top: 10%;
+  }
+  .copyrightinfo{
+    color: rgb(141, 141, 141);
+  }
+  /*=====to top btn====*/
+  html{
+    scroll-behavior: smooth;
+  }
+  .back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+  }
+  .back-to-top span{
+    color:#c2e2cf;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+  }
+  .back-to-top:hover span{
+    color: #f3efed;
+    transform: translateY(-4px);
+  }
+  /*=========================*/  

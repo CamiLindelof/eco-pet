@@ -1,0 +1,204 @@
+/*Stillmall till Om oss sidan*/
+/*Innehåll av sidan*/
+body{
+  background-color: #a1c7b1;
+  font-family: Prompt, Arial;
+  font-size: 20px; 
+  line-height: 1.6em;
+  margin: 0%; 
+}
+/*Header/Navigeringsmenyn*/
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  background-color: #362f2f;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3em;
+  z-index: 1000; /*Lägg till ett högt z-index för att säkerställa att det ligger ovanpå andra element*/
+}
+/*Justera bredden på logotypen*/
+.logo img{
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.nav-links {
+  font-family: Prompt, Arial;
+  list-style: none;
+  display: flex;
+  gap: 3em;
+}
+.nav-links a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color o.3s ease;
+}
+
+#loginbtn{
+  background-color: #a1c7b1;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #F3EFED;
+}
+
+#loginbtn:hover{
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+/* Design för varukorgsknappen*/
+#varukorg{
+  background-color: #a1c7b1;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #F3EFED;
+}
+#varukorg:hover{
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+
+/*Justera färgen på "hover"*/
+.nav-links a:hover{
+  color: #a1c7b1;
+}
+/*Innehållets storlek*/
+article{
+    width: 75%;
+    background-color: #f3efed;
+    margin-top: 1em;
+    margin-inline: 200px;
+    padding: 2em;
+    border-radius: 20px;
+}
+/*Rubriknamn och stil*/
+ h1{
+  font-family: Permanent Marker, Arial;
+  font-size: 40px;
+  color: #5c2a1d;
+  margin-inline: 210px;
+  margin-top: 3em;
+}
+h2{
+  font-size: 28px;
+  color: #0B4c27;
+  margin-top: 3em;
+}
+h3{
+  font-family: Cabin Sketch, Arial;
+  font-size: 30px;
+  font-style:italic;
+  color: #a1c7b1;
+  letter-spacing: 3px;
+  padding: 2em;
+  margin-top: 4.5em;
+  margin-left:13%;
+}
+/*Placering av flexbox med bild och text*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c2a1d;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+.bild{
+    margin-left: 3%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 5%;
+}
+.text{
+    margin-bottom: 8%;
+    margin-left: 5%;
+}
+/*Foter med kontaktinformation och upphovsrätt*/
+footer a {
+  color: #f3e8e8;
+  text-decoration: none;
+}
+footer{
+  background-image: url(../footerImages/bg_pfooter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0%;
+  padding: 4%;
+  margin-top: 4%;
+  height: auto;
+  color: #f3e8e8;
+}
+.footcontain{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5%;
+}
+.footnavcontainer{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footnavcontainer a{
+  color: #dbcdcd;
+}
+.socialpic{
+  width: 20%;
+  height: 20%;
+  transition: 0.2s;
+  margin-top: 2%;
+}
+.socialpic:hover{
+  transform: scale(1.2);
+}
+#iconref{
+  color:#666666;
+  margin-top: 10%;
+}
+.copyrightinfo{
+  color: rgb(141, 141, 141);
+}
+/*=====to top btn====*/
+html{
+  scroll-behavior: smooth;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.back-to-top span{
+  color:#c2e2cf;
+  font-size: 2rem;
+  transition: 0.2s ease-out;
+}
+.back-to-top:hover span{
+  color: #f3efed;
+  transform: translateY(-4px);
+}
+/*=========================*/  
